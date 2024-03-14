@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My web page</title>
+		
+		<style>
+			table {
+				border-collapse: collapse;
+				width: 100%;
+			}
+
+			th, td {
+				border: 1px solid #ddd;
+				text-align: left;
+				padding: 8px;
+			}
+
+			tr:nth-child(even) {
+				background-color: #f2f2f2;
+			}
+
+			tr:hover {
+				background-color: #ddd;
+			}
+		</style>
+	</head>
+	<body>
+		<p>This is Paragraph text</p>
+		<p>This is another Paragraph text</p>
+		
+		<span>This is Span text</span>
+		<span>This is another Span text</span>
+		
+		<h1>This is Heading 1</h1>
+		<h2>This is Heading 2</h2>
+		<h3>This is Heading 3</h3>
+		<h4>This is Heading 4</h4>
+		<h5>This is Heading 5</h5>
+		<h6>This is Heading 6</h6>
+		
+		<ul>
+			<li>Apples</li>
+			<li>Bananas</li>
+			<li>Oranges</li>
+		</ul>
+		
+		<ol>
+			<li>First item</li>
+			<li>Second item</li>
+			<li>Third item</li>
+		</ol>
+		
+		<img src="image.png" alt="Some image" width="300" height="200"/>
+		<img src="buggati.jpg" alt="Some image" width="300" height="200"/>
+		<br/>
+		<strong>Strong text</strong>
+		<br/>
+		<em>Italic text</em>
+		<hr/>
+		<div style="background-color: #888">
+			<p>This is a Paragraph in Div</p>
+			<span>This is a Span in Div</span>
+			
+			<ul>
+				<li>Apples</li>
+				<li>Bananas</li>
+				<li>Oranges</li>
+			</ul>
+			
+			<ol>
+				<li>First item</li>
+				<li>Second item</li>
+				<li>Third item</li>
+			</ol>
+		</div>
+		<form action="/submit-form" method="POST">
+			<fieldset>
+				<legend>Contact Us</legend>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required />
+				
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required />
+				
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" rows="4" required></textarea>
+				
+				<input type="submit" value="Send"/>
+			</fieldset>
+		</form>
+
+		<table>
+			<tr>
+				<th>Product Name</th>
+				<th>Price</th>
+			</tr>
+			<tr>
+				<td>Widget A</td>
+				<td>$10</td>
+			</tr>
+			<tr>
+				<td>Gadget B</td>
+				<td>$20</td>
+			</tr>
+			<tr>
+				<td colspan="2">This cell spans across two columns.</td>
+			</tr>
+		</table>
+
+	</body>
+</html>

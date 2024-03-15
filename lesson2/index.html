@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lesson 2</title>
+		
+		<style>
+			a {
+				text-decoration: none;
+			}
+			button {
+				padding: 5px;
+				margin: 5px; 
+			}
+			table {
+				border-collapse: collapse;
+				width: 100%;
+			}
+			th, td {
+				border: 1px solid #ddd;
+				text-align: left;
+				padding: 8px;
+			}
+
+			tr:nth-child(even) {
+				background-color: #f2f2f2;
+			}
+
+			tr:hover {
+				background-color: #ddd;
+			}
+		</style>
+	</head>
+	<body>
+		<button>
+			<a href="../index.html">Home</a>
+		</button>
+		<form action="../index.html" method="GET">
+			<fieldset>
+				<legend>Contact Us</legend>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required />
+				
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required />
+				<hr/>
+				
+				<label for="country">Country:</label>
+				<select id="country" name="country" required>
+					<option value="armenia">Armenia</option>
+					<option value="usa">United States</option>
+					<option value="france" selected>France</option>
+					<option value="russia">Russia</option>
+					<option value="england">England</option>
+				</select>
+				<hr/>
+				
+				<label for="age">Age:</label>
+				<label for="age">0 - 18</label>
+				<input type="radio" id="age" name="age" value="0-18" required />
+				<label for="age">19 - 40</label>
+				<input type="radio" id="age" name="age" value="19-40" required />
+				<label for="age">41 - 60</label>
+				<input type="radio" id="age" name="age" value="41-60" required />
+				<label for="age">61 - 100</label>
+				<input type="radio" id="age" name="age" value="61-100" required />
+				<hr/>
+				
+				<label for="country">Languages:</label>
+				<label for="country">Armenian</label>
+				<input type="checkbox" id="country" name="age" value="armenian" required />
+				<label for="country">English</label>
+				<input type="checkbox" id="country" name="age" value="english" required />
+				<label for="country">Russian</label>
+				<input type="checkbox" id="country" name="age" value="russian" required />
+				<label for="country">French</label>
+				<input type="checkbox" id="country" name="age" value="french" required />
+				<hr/>
+				
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" rows="4" required></textarea>
+				
+				<input type="submit" value="Send"/>
+			</fieldset>
+		</form>
+
+		<table>
+			<tr>
+				<th>Product Name</th>
+				<th>Price</th>
+			</tr>
+			<tr>
+				<td>Widget A</td>
+				<td>$10</td>
+			</tr>
+			<tr>
+				<td>Gadget B</td>
+				<td>$20</td>
+			</tr>
+			<tr>
+				<td colspan="2">This cell spans across two columns.</td>
+			</tr>
+		</table>
+	</body>
+</html>

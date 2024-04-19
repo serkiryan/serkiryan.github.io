@@ -1135,6 +1135,35 @@ Such practical sessions are invaluable in transitioning from theoretical knowled
 				hy.style.display = 'inline';
 				ru.style.display = 'none';
 			});
+
+            let pre_code = document.querySelectorAll('pre code');
+			
+			pre_code = pre_code.map(function(code, key){
+				let html = code.innerHTML
+				
+			let card = document.createElement('div');
+			card.className = 'card bg-dark text-white';
+			
+			//document.body.appendChild(card);
+			
+			let card_html = `<div class="card bg-dark text-white">
+            <div class="card-header">
+                <button class="btn btn-primary" onclick="copyCode(1)">Copy</button>
+                <span id="copied-1" class="float-end"></span>
+            </div>
+            <div>
+                <pre>                    <code class="language-javascript hljs" id="code-block-1" data-highlighted="yes">
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">sayHello</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Hello, world!"</span>);
+}                               
+                    </code>
+                </pre>
+            </div>
+        </div>
+		`
+		card.innerHTML = card_html;
+		return card;
+			});
         </script>
     </body>
 </html>
